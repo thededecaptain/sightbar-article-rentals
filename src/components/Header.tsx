@@ -1,8 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Search, ShoppingBag, User, Menu, X } from 'lucide-react';
-import { categories } from '@/lib/data';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
@@ -61,39 +60,16 @@ export function Header() {
           >
             For Publishers
           </Link>
-          {categories.slice(0, 3).map((category) => (
-            <Link
-              key={category.id}
-              to={`/browse/${category.slug}`}
-              className={cn(
-                'text-sm font-medium nav-link',
-                location.pathname === `/browse/${category.slug}` && 'text-black font-semibold'
-              )}
-            >
-              {category.name}
-            </Link>
-          ))}
         </nav>
 
-        {/* Actions */}
-        <div className="hidden md:flex items-center space-x-4">
-          <Button variant="ghost" size="icon" className="text-sightbar-700">
-            <Search size={20} />
-          </Button>
-          <Button variant="ghost" size="icon" className="text-sightbar-700">
-            <ShoppingBag size={20} />
-          </Button>
-          <Button variant="ghost" size="icon" className="text-sightbar-700">
-            <User size={20} />
-          </Button>
-          <Button className="bg-black text-white hover:bg-sightbar-800 rounded-full px-6 button-effect">
-            Subscribe
-          </Button>
-        </div>
+        {/* Action Button */}
+        <Button className="bg-black text-white hover:bg-sightbar-800 rounded-full px-6 button-effect">
+          Get Started
+        </Button>
 
         {/* Mobile Navigation Toggle */}
         <button
-          className="md:hidden text-sightbar-800"
+          className="md:hidden text-sightbar-800 ml-4"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -122,35 +98,7 @@ export function Header() {
             >
               For Publishers
             </Link>
-            {categories.map((category) => (
-              <Link
-                key={category.id}
-                to={`/browse/${category.slug}`}
-                className={cn(
-                  'text-sm py-2 font-medium nav-link',
-                  location.pathname === `/browse/${category.slug}` && 'text-black font-semibold'
-                )}
-              >
-                {category.name}
-              </Link>
-            ))}
           </nav>
-          <div className="flex items-center justify-between pt-3 border-t border-gray-200">
-            <div className="flex space-x-4">
-              <Button variant="ghost" size="icon" className="text-sightbar-700">
-                <Search size={20} />
-              </Button>
-              <Button variant="ghost" size="icon" className="text-sightbar-700">
-                <ShoppingBag size={20} />
-              </Button>
-              <Button variant="ghost" size="icon" className="text-sightbar-700">
-                <User size={20} />
-              </Button>
-            </div>
-            <Button className="bg-black text-white hover:bg-sightbar-800 rounded-full px-6 button-effect">
-              Subscribe
-            </Button>
-          </div>
         </div>
       )}
     </header>
