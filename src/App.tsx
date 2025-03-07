@@ -8,6 +8,8 @@ import Index from "./pages/Index";
 import Browse from "./pages/Browse";
 import Article from "./pages/Article";
 import NotFound from "./pages/NotFound";
+import ForReaders from "./pages/ForReaders";
+import ForPublishers from "./pages/ForPublishers";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +24,8 @@ const App = () => (
           <Route path="/browse" element={<Browse />} />
           <Route path="/browse/:categorySlug" element={<Browse />} />
           <Route path="/article/:id" element={<Article />} />
+          <Route path="/for-readers" element={<ForReaders />} />
+          <Route path="/for-publishers" element={<ForPublishers />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

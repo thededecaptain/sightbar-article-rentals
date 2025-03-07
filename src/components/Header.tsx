@@ -43,7 +43,25 @@ export function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          {categories.slice(0, 5).map((category) => (
+          <Link
+            to="/for-readers"
+            className={cn(
+              'text-sm font-medium nav-link',
+              location.pathname === '/for-readers' && 'text-black font-semibold'
+            )}
+          >
+            For Readers
+          </Link>
+          <Link
+            to="/for-publishers"
+            className={cn(
+              'text-sm font-medium nav-link',
+              location.pathname === '/for-publishers' && 'text-black font-semibold'
+            )}
+          >
+            For Publishers
+          </Link>
+          {categories.slice(0, 3).map((category) => (
             <Link
               key={category.id}
               to={`/browse/${category.slug}`}
@@ -86,6 +104,24 @@ export function Header() {
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 glass-panel animate-fade-in p-4 space-y-4">
           <nav className="flex flex-col space-y-3">
+            <Link
+              to="/for-readers"
+              className={cn(
+                'text-sm py-2 font-medium nav-link',
+                location.pathname === '/for-readers' && 'text-black font-semibold'
+              )}
+            >
+              For Readers
+            </Link>
+            <Link
+              to="/for-publishers"
+              className={cn(
+                'text-sm py-2 font-medium nav-link',
+                location.pathname === '/for-publishers' && 'text-black font-semibold'
+              )}
+            >
+              For Publishers
+            </Link>
             {categories.map((category) => (
               <Link
                 key={category.id}
