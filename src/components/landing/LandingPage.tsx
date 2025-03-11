@@ -14,13 +14,15 @@ const LandingPage = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <HeroSection />
-      <ValueProposition />
-      <HowItWorks />
-      <ForPublishers />
-      <LibraryAndCredits />
-      <Testimonials />
-      <FAQSection />
+      <main>
+        <HeroSection />
+        <ValueProposition />
+        <HowItWorks />
+        <ForPublishers />
+        <LibraryAndCredits />
+        <Testimonials />
+        <FAQSection />
+      </main>
       <FooterSection />
     </div>
   );

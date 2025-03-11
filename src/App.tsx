@@ -16,6 +16,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          {/* Add additional routes for other pages as needed */}
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
