@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Hexagon, Triangle, Circle } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -21,12 +21,12 @@ const HeroSection = () => {
               </Button>
             </div>
           </div>
-          <div className="lg:w-1/2">
-            <img 
-              src="https://images.unsplash.com/photo-1553739493-e1eb1e82ef3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-              alt="Person reading on devices" 
-              className="rounded-lg shadow-xl w-full"
-            />
+          <div className="lg:w-1/2 relative">
+            <div className="aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg shadow-xl flex items-center justify-center relative overflow-hidden">
+              <Circle className="absolute top-1/4 left-1/4 w-16 h-16 text-black/10" />
+              <Hexagon className="absolute center w-32 h-32 text-black/20" />
+              <Triangle className="absolute bottom-1/4 right-1/4 w-20 h-20 text-black/15" />
+            </div>
           </div>
         </div>
       </div>

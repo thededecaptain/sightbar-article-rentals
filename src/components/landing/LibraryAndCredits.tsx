@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { BookOpen, FolderOpen, CreditCard } from 'lucide-react';
+import { BookOpen, FolderOpen, CreditCard, Square, Circle, Triangle } from 'lucide-react';
 
 const LibraryAndCredits = () => {
   return (
@@ -33,12 +32,12 @@ const LibraryAndCredits = () => {
           />
         </div>
         
-        <div className="mt-12 bg-white p-6 rounded-lg shadow-sm">
-          <img 
-            src="https://images.unsplash.com/photo-1586380951230-e6703d9f6833?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
-            alt="Library and credits interface" 
-            className="w-full h-auto rounded-lg" 
-          />
+        <div className="mt-12 bg-gradient-to-br from-white to-gray-100 p-6 rounded-lg shadow-sm relative h-64 overflow-hidden">
+          <div className="absolute inset-0 flex items-center justify-center">
+            <Square className="absolute w-40 h-40 text-gray-200 transform -rotate-12" />
+            <Circle className="absolute w-32 h-32 text-gray-300 transform translate-x-12" />
+            <Triangle className="absolute w-28 h-28 text-gray-400 transform -translate-x-16" />
+          </div>
         </div>
       </div>
     </section>

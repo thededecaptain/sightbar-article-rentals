@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { User } from 'lucide-react';
 
 const Testimonials = () => {
   return (
@@ -11,14 +12,12 @@ const Testimonials = () => {
         
         <div className="grid md:grid-cols-2 gap-8">
           <TestimonialCard 
-            image="https://randomuser.me/api/portraits/women/44.jpg"
             name="Sarah T."
             role="Reader"
             quote="I love how I can read articles from different newspapers without subscribing to each one. It's affordable and convenient!"
           />
           
           <TestimonialCard 
-            image="https://randomuser.me/api/portraits/men/32.jpg"
             name="John D."
             role="Editor at The Daily News"
             quote="Partnering with this platform has allowed us to reach new readers and monetize our content more effectively."
@@ -29,16 +28,12 @@ const Testimonials = () => {
   );
 };
 
-const TestimonialCard = ({ image, name, role, quote }: { image: string, name: string, role: string, quote: string }) => {
+const TestimonialCard = ({ name, role, quote }: { name: string, role: string, quote: string }) => {
   return (
     <div className="bg-gray-50 p-8 rounded-lg shadow-sm">
       <div className="flex items-center mb-4">
-        <div className="h-12 w-12 rounded-full bg-gray-300 overflow-hidden mr-4">
-          <img 
-            src={image} 
-            alt={name} 
-            className="h-full w-full object-cover" 
-          />
+        <div className="h-12 w-12 rounded-full bg-black/10 flex items-center justify-center mr-4">
+          <User className="h-6 w-6 text-black/60" />
         </div>
         <div>
           <p className="font-semibold">{name}</p>

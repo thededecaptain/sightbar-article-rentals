@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Search, ExternalLink, BookOpen, CreditCard } from 'lucide-react';
+import { Search, ExternalLink, BookOpen, CreditCard, Square, Circle, Triangle } from 'lucide-react';
 
 const ValueProposition = () => {
   return (
@@ -36,12 +36,12 @@ const ValueProposition = () => {
           />
         </div>
         
-        <div className="mt-12 bg-gray-50 p-6 rounded-lg shadow-sm">
-          <img 
-            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
-            alt="Platform screenshot" 
-            className="w-full h-auto rounded-lg" 
-          />
+        <div className="mt-12 bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-lg shadow-sm relative h-64 overflow-hidden">
+          <div className="absolute inset-0 flex items-center justify-center">
+            <Square className="absolute w-32 h-32 text-gray-200 transform rotate-45" />
+            <Circle className="absolute w-40 h-40 text-gray-300" />
+            <Triangle className="absolute w-24 h-24 text-gray-400" />
+          </div>
         </div>
       </div>
     </section>
