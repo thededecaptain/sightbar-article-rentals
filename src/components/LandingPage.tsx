@@ -20,13 +20,13 @@ const LandingPage = () => {
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold tracking-tight mb-6">
-              Read What You Want, When You Want – <span className="text-accent-blue">Without the Commitment.</span>
+              Read what you want, when you want – <span className="text-accent-blue">without the commitment</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8">
               Rent individual articles from top newspapers and magazines for 24-72 hours. No subscriptions. No hassle. Just great content.
             </p>
             <Button className="bg-accent-blue hover:bg-accent-blue/90 text-white px-8 py-6 rounded-full text-lg">
-              Start Reading Now <ArrowRight className="ml-2" />
+              Start reading now <ArrowRight className="ml-2" />
             </Button>
           </div>
         </div>
@@ -37,29 +37,29 @@ const LandingPage = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
-              Your Gateway to Premium Content, One Article at a Time.
+              Your gateway to premium content, one article at a time
             </h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
                 icon: <Search className="w-8 h-8 text-accent-blue" />,
-                title: "Rent Articles Instantly",
+                title: "Rent articles instantly",
                 description: "Paste a URL, search, and rent articles from partnered publishers."
               },
               {
                 icon: <Clock className="w-8 h-8 text-accent-blue" />,
-                title: "Flexible Access",
+                title: "Flexible access",
                 description: "Read for 24-72 hours, starting whenever you're ready."
               },
               {
                 icon: <Library className="w-8 h-8 text-accent-blue" />,
-                title: "Build Your Library",
+                title: "Build your library",
                 description: "Save and organize rented articles for future access."
               },
               {
                 icon: <CreditCard className="w-8 h-8 text-accent-blue" />,
-                title: "No Subscriptions",
+                title: "No subscriptions",
                 description: "Pay only for what you read, without long-term commitments."
               }
             ].map((item, index) => (
@@ -79,22 +79,22 @@ const LandingPage = () => {
       <section className="py-24 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-8">How It Works for Readers</h2>
+            <h2 className="text-4xl font-bold mb-8">How it works for readers</h2>
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
                   step: "1",
-                  title: "Search or Paste a URL",
+                  title: "Search or paste a URL",
                   description: "Paste the article's URL or search for it in our platform."
                 },
                 {
                   step: "2",
-                  title: "Rent and Read",
+                  title: "Rent and read",
                   description: "If the article is available, rent it for 24-72 hours. Start reading anytime – the timer begins when you open it."
                 },
                 {
                   step: "3",
-                  title: "Organize and Revisit",
+                  title: "Organize and revisit",
                   description: "Access your rented articles in your library. Re-rent them anytime if you need more time."
                 }
               ].map((step, index) => (
@@ -110,7 +110,7 @@ const LandingPage = () => {
               ))}
             </div>
             <Button className="mt-12 bg-accent-blue hover:bg-accent-blue/90 text-white px-8 py-6 rounded-full text-lg">
-              Try It Now <ArrowRight className="ml-2" />
+              Try it now <ArrowRight className="ml-2" />
             </Button>
           </div>
         </div>
@@ -120,7 +120,7 @@ const LandingPage = () => {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Expand Your Reach and Monetize Your Content.</h2>
+            <h2 className="text-4xl font-bold mb-4">Expand your reach and monetize your content</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
               Partner with us to make your articles available to a wider audience while retaining full control over your content.
             </p>
@@ -129,17 +129,17 @@ const LandingPage = () => {
             {[
               {
                 icon: <Newspaper className="w-8 h-8 text-accent-blue" />,
-                title: "Seamless Integration",
+                title: "Seamless integration",
                 description: "Readers access your articles through our platform, bypassing paywalls with a single account."
               },
               {
                 icon: <BarChart className="w-8 h-8 text-accent-blue" />,
-                title: "Data Insights",
+                title: "Data insights",
                 description: "Gain access to reader habits, email addresses, and names to grow your subscriber base."
               },
               {
                 icon: <Users className="w-8 h-8 text-accent-blue" />,
-                title: "Demand-Driven Partnerships",
+                title: "Demand-driven partnerships",
                 description: "We prioritize partnerships based on reader demand, ensuring your content reaches the right audience."
               }
             ].map((item, index) => (
@@ -154,7 +154,7 @@ const LandingPage = () => {
           </div>
           <div className="text-center">
             <Button className="bg-accent-blue hover:bg-accent-blue/90 text-white px-8 py-6 rounded-full text-lg">
-              Partner With Us <ArrowRight className="ml-2" />
+              Partner with us <ArrowRight className="ml-2" />
             </Button>
           </div>
         </div>
@@ -164,7 +164,7 @@ const LandingPage = () => {
       <section className="py-24 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Your Reading Hub and Wallet, All in One Place.</h2>
+            <h2 className="text-4xl font-bold mb-4">Your reading hub and wallet, all in one place</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
               Manage your rented articles, organize your library, and top up credits effortlessly.
             </p>
@@ -173,17 +173,17 @@ const LandingPage = () => {
             {[
               {
                 icon: <FileText className="w-8 h-8 text-accent-blue" />,
-                title: "Active Rentals",
+                title: "Active rentals",
                 description: "See articles you're currently reading and those you've rented but haven't started."
               },
               {
                 icon: <FolderOpen className="w-8 h-8 text-accent-blue" />,
-                title: "Categorize and Organize",
+                title: "Categorize and organize",
                 description: "Sort articles by newspaper, topic, or reading length."
               },
               {
                 icon: <WalletIcon className="w-8 h-8 text-accent-blue" />,
-                title: "Easy Payments",
+                title: "Easy payments",
                 description: "Add credits, update payment methods, and track your spending."
               }
             ].map((item, index) => (
@@ -203,7 +203,7 @@ const LandingPage = () => {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-12">What Readers and Publishers Are Saying</h2>
+            <h2 className="text-4xl font-bold mb-12">What readers and publishers are saying</h2>
             <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
               <div className="bg-gray-50 p-8 rounded-xl shadow-sm relative">
                 <div className="absolute -top-10 left-1/2 transform -translate-x-1/2">
@@ -250,7 +250,7 @@ const LandingPage = () => {
       <section className="py-24 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-12">Frequently Asked Questions</h2>
+            <h2 className="text-4xl font-bold mb-12">Frequently asked questions</h2>
             <div className="max-w-3xl mx-auto">
               <Accordion type="single" collapsible className="bg-white rounded-xl overflow-hidden">
                 <AccordionItem value="item-1" className="border-b">
@@ -288,7 +288,7 @@ const LandingPage = () => {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
             <div>
-              <h3 className="text-xl font-semibold mb-4">About Us</h3>
+              <h3 className="text-xl font-semibold mb-4">About us</h3>
               <p className="text-gray-400 mb-6">
                 We're making premium content accessible one article at a time, without the commitment of subscriptions.
               </p>
@@ -307,11 +307,11 @@ const LandingPage = () => {
             <div>
               <h3 className="text-xl font-semibold mb-4">Links</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">For Publishers</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About us</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">For publishers</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Contact us</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy policy</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Terms of service</a></li>
               </ul>
             </div>
             <div>
@@ -324,7 +324,7 @@ const LandingPage = () => {
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-4">Stay Updated</h3>
+              <h3 className="text-xl font-semibold mb-4">Stay updated</h3>
               <p className="text-gray-400 mb-4">Subscribe to our newsletter for the latest articles and platform updates.</p>
               <div className="flex">
                 <Input 
@@ -339,7 +339,7 @@ const LandingPage = () => {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; {new Date().getFullYear()} Article Rental Platform. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Article rental platform. All rights reserved.</p>
           </div>
         </div>
       </footer>
@@ -348,3 +348,4 @@ const LandingPage = () => {
 };
 
 export default LandingPage;
+
