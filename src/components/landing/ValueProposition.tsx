@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Search, ExternalLink, BookOpen, CreditCard, Square, Circle, Triangle } from 'lucide-react';
+import { Search, ExternalLink, BookOpen, CreditCard, Sun, Rainbow, Sparkles, Star } from 'lucide-react';
 
 const ValueProposition = () => {
   return (
@@ -36,11 +36,12 @@ const ValueProposition = () => {
           />
         </div>
         
-        <div className="mt-12 bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-lg shadow-sm relative h-64 overflow-hidden">
+        <div className="mt-12 bg-gradient-to-br from-purple-100 via-blue-100 to-green-100 p-6 rounded-lg shadow-sm relative h-64 overflow-hidden">
           <div className="absolute inset-0 flex items-center justify-center">
-            <Square className="absolute w-32 h-32 text-gray-200 transform rotate-45" />
-            <Circle className="absolute w-40 h-40 text-gray-300" />
-            <Triangle className="absolute w-24 h-24 text-gray-400" />
+            <Sun className="absolute w-32 h-32 text-yellow-400 transform rotate-45" />
+            <Rainbow className="absolute w-40 h-40 text-indigo-500 opacity-70" />
+            <Star className="absolute w-24 h-24 text-amber-400 right-20 bottom-10" />
+            <Sparkles className="absolute w-20 h-20 text-teal-400 left-20 top-10" />
           </div>
         </div>
       </div>

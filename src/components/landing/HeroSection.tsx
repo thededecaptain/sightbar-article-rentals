@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Hexagon, Triangle, Circle } from 'lucide-react';
+import { ArrowRight, Rainbow, Sun, Heart, Star, Sparkles } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -22,10 +22,12 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="lg:w-1/2 relative">
-            <div className="aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg shadow-xl flex items-center justify-center relative overflow-hidden">
-              <Circle className="absolute top-1/4 left-1/4 w-16 h-16 text-black/10" />
-              <Hexagon className="absolute center w-32 h-32 text-black/20" />
-              <Triangle className="absolute bottom-1/4 right-1/4 w-20 h-20 text-black/15" />
+            <div className="aspect-[4/3] bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 rounded-lg shadow-xl flex items-center justify-center relative overflow-hidden">
+              <Sun className="absolute top-10 left-10 w-16 h-16 text-yellow-400 animate-pulse" />
+              <Rainbow className="absolute center w-32 h-32 text-indigo-500 opacity-80" />
+              <Star className="absolute bottom-12 right-12 w-14 h-14 text-amber-400" />
+              <Sparkles className="absolute top-1/3 right-1/4 w-12 h-12 text-blue-400" />
+              <Heart className="absolute bottom-1/4 left-1/4 w-12 h-12 text-rose-400" />
             </div>
           </div>
         </div>

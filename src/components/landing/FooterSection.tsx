@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { toast } from '@/components/ui/use-toast';
+import { Rainbow } from 'lucide-react';
 
 const FooterSection = () => {
   const [email, setEmail] = useState('');
@@ -22,8 +23,9 @@ const FooterSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <div className="text-2xl font-bold mb-4">
+            <div className="text-2xl font-bold mb-4 flex items-center">
               <span>Sight</span><span className="text-accent-blue">bar</span>
+              <Rainbow className="ml-2 h-5 w-5 text-accent-blue" />
             </div>
             <p className="text-gray-400 mb-4">
               Read what you want, when you want – without the commitment.

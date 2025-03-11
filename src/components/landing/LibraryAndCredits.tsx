@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { BookOpen, FolderOpen, CreditCard, Square, Circle, Triangle } from 'lucide-react';
+import { BookOpen, FolderOpen, CreditCard, Rainbow, Sparkles, Sun, Star } from 'lucide-react';
 
 const LibraryAndCredits = () => {
   return (
@@ -32,11 +33,12 @@ const LibraryAndCredits = () => {
           />
         </div>
         
-        <div className="mt-12 bg-gradient-to-br from-white to-gray-100 p-6 rounded-lg shadow-sm relative h-64 overflow-hidden">
+        <div className="mt-12 bg-gradient-to-br from-pink-100 via-yellow-100 to-blue-100 p-6 rounded-lg shadow-sm relative h-64 overflow-hidden">
           <div className="absolute inset-0 flex items-center justify-center">
-            <Square className="absolute w-40 h-40 text-gray-200 transform -rotate-12" />
-            <Circle className="absolute w-32 h-32 text-gray-300 transform translate-x-12" />
-            <Triangle className="absolute w-28 h-28 text-gray-400 transform -translate-x-16" />
+            <Rainbow className="absolute w-40 h-40 text-indigo-500 transform -rotate-12 opacity-70" />
+            <Sun className="absolute w-32 h-32 text-amber-400 transform translate-x-12" />
+            <Sparkles className="absolute w-28 h-28 text-teal-400 transform -translate-x-16" />
+            <Star className="absolute w-24 h-24 text-rose-400 bottom-10 right-10" />
           </div>
         </div>
       </div>
