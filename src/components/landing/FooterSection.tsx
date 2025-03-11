@@ -1,47 +1,56 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
+import { toast } from '@/components/ui/use-toast';
 
 const FooterSection = () => {
+  const [email, setEmail] = useState('');
+  
+  const handleSubscribe = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (email) {
+      toast({
+        title: "Subscription successful!",
+        description: `We've added ${email} to our newsletter.`,
+      });
+      setEmail('');
+    }
+  };
+  
   return (
     <footer className="py-12 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <div className="text-2xl font-bold mb-4">
               <span>Sight</span><span className="text-accent-blue">bar</span>
             </div>
-            <p className="text-gray-400">
+            <p className="text-gray-400 mb-4">
               Read what you want, when you want – without the commitment.
             </p>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Company</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">For publishers</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Contact us</a></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Legal</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy policy</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Terms of service</a></li>
-            </ul>
+            <p>
+              <a href="mailto:info@sightbar.io" className="text-gray-400 hover:text-white transition-colors">
+                Contact us
+              </a>
+            </p>
           </div>
           
           <div>
             <h3 className="text-lg font-semibold mb-4">Stay updated</h3>
             <p className="text-gray-400 mb-4">Subscribe to our newsletter for the latest articles and platform updates.</p>
-            <div className="flex">
-              <input type="email" placeholder="Your email" className="px-4 py-2 rounded-l-md w-full text-gray-900" />
-              <Button className="bg-accent-blue hover:bg-blue-600 rounded-l-none">
+            <form onSubmit={handleSubscribe} className="flex">
+              <input 
+                type="email" 
+                placeholder="Your email" 
+                className="px-4 py-2 rounded-l-md w-full text-gray-900"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
+              <Button type="submit" className="bg-accent-blue hover:bg-blue-600 rounded-l-none">
                 Subscribe
               </Button>
-            </div>
+            </form>
           </div>
         </div>
         
