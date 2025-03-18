@@ -1,7 +1,9 @@
+
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { toast } from '@/components/ui/use-toast';
 import { ArrowRight, Mail, Github, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const FooterSection = () => {
   const [email, setEmail] = useState('');
@@ -77,7 +79,7 @@ const FooterSection = () => {
         <div className="border-t border-gray-800 mt-16 pt-8 flex flex-col md:flex-row justify-between">
           <p className="text-gray-400">&copy; {new Date().getFullYear()} Sightbar. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <FooterSmallLink href="#">Privacy</FooterSmallLink>
+            <FooterSmallLink href="/privacy">Privacy</FooterSmallLink>
             <FooterSmallLink href="#">Terms</FooterSmallLink>
             <FooterSmallLink href="#">Cookies</FooterSmallLink>
           </div>
@@ -111,6 +113,13 @@ const FooterLink = ({ href, children }: { href: string, children: React.ReactNod
 };
 
 const FooterSmallLink = ({ href, children }: { href: string, children: React.ReactNode }) => {
+  if (href.startsWith('/')) {
+    return (
+      <Link to={href} className="text-sm text-gray-500 hover:text-gray-300 transition-colors">
+        {children}
+      </Link>
+    );
+  }
   return (
     <a href={href} className="text-sm text-gray-500 hover:text-gray-300 transition-colors">
       {children}
