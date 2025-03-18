@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { toast } from '@/components/ui/use-toast';
-import { ArrowRight, Mail, Github, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { ArrowRight, Mail, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const FooterSection = () => {
@@ -36,10 +36,8 @@ const FooterSection = () => {
               The future of article rentals. Read beyond the paywall, one article at a time, without expensive subscriptions.
             </p>
             <div className="flex space-x-4">
-              <SocialIcon href="#" icon={<Twitter className="h-5 w-5" />} />
-              <SocialIcon href="#" icon={<Instagram className="h-5 w-5" />} />
-              <SocialIcon href="#" icon={<Github className="h-5 w-5" />} />
-              <SocialIcon href="#" icon={<Linkedin className="h-5 w-5" />} />
+              <SocialIcon href="mailto:info@sightbar.io" icon={<Mail className="h-5 w-5" />} />
+              <SocialIcon href="https://linkedin.com/company/sightbar" icon={<Linkedin className="h-5 w-5" />} />
             </div>
           </div>
           
