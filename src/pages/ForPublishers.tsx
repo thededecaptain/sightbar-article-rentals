@@ -20,7 +20,10 @@ const ForPublishers = () => {
             <p className="text-lg md:text-xl text-sightbar-600 max-w-3xl mx-auto mb-8">
               Unlock new revenue streams and reach readers who prefer pay-per-article access over traditional subscriptions.
             </p>
-            <Button className="bg-black text-white hover:bg-sightbar-800 rounded-full px-8 py-6 text-lg button-effect">
+            <Button 
+              className="bg-black text-white hover:bg-sightbar-800 rounded-full px-8 py-6 text-lg button-effect"
+              onClick={() => window.location.href = 'mailto:info@sightbar.io'}
+            >
               Partner With Us <ArrowRight className="ml-2" />
             </Button>
           </div>
@@ -193,7 +196,10 @@ const ForPublishers = () => {
               Become a Sightbar partner and start monetizing your content in a new way. Our team is ready to answer your questions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-accent-blue text-white hover:bg-accent-blue/90 rounded-full px-8 py-6 text-lg button-effect">
+              <Button 
+                className="bg-accent-blue text-white hover:bg-accent-blue/90 rounded-full px-8 py-6 text-lg button-effect"
+                onClick={() => window.location.href = 'mailto:info@sightbar.io'}
+              >
                 Contact Our Team
               </Button>
               <Link to="/for-readers">

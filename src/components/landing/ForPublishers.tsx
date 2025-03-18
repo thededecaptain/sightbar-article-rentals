@@ -51,7 +51,10 @@ const ForPublishers = () => {
             </div>
             
             <div className="pt-4">
-              <Button className="bg-[#7855C0] hover:bg-[#6745B0] px-6 py-6 text-lg rounded-xl shadow-md hover:shadow-lg transition-all">
+              <Button 
+                className="bg-[#7855C0] hover:bg-[#6745B0] px-6 py-6 text-lg rounded-xl shadow-md hover:shadow-lg transition-all"
+                onClick={() => window.location.href = 'mailto:info@sightbar.io'}
+              >
                 Partner with us
               </Button>
             </div>
