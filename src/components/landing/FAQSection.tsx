@@ -66,7 +66,7 @@ const FAQSection = () => {
         <div className="mt-10 text-center">
           <p className="text-gray-600 mb-4">Still have questions?</p>
           <a 
-            href="mailto:support@sightbar.io" 
+            href="mailto:info@sightbar.io" 
             className="inline-flex items-center text-[#7855C0] font-medium hover:text-[#6745B0] transition-colors"
           >
             Contact our support team
