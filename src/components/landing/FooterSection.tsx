@@ -37,7 +37,7 @@ const FooterSection = () => {
             </p>
             <div className="flex space-x-4">
               <SocialIcon href="mailto:info@sightbar.io" icon={<Mail className="h-5 w-5" />} />
-              <SocialIcon href="https://linkedin.com/company/sightbar" icon={<Linkedin className="h-5 w-5" />} />
+              <SocialIcon href="https://www.linkedin.com/company/sightbar/" icon={<Linkedin className="h-5 w-5" />} />
             </div>
           </div>
           
