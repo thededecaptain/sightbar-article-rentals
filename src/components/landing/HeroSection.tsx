@@ -64,7 +64,7 @@ const HeroSection = () => {
                     <div className="h-2 w-3/4 bg-gray-200 rounded-full"></div>
                     <div className="h-2 w-2/3 bg-gray-200 rounded-full mt-1"></div>
                     <div className="mt-3 flex justify-end">
-                      <span className="text-xs bg-[#F4EBFF] text-[#7E5BC2] px-2 py-1 rounded-md">Rent for $1.49</span>
+                      <span className="text-xs bg-[#F4EBFF] text-[#7E5BC2] px-2 py-1 rounded-md">Rent for $0.49</span>
                     </div>
                   </div>
                   <div className="bg-gray-50 p-4 rounded-lg">
