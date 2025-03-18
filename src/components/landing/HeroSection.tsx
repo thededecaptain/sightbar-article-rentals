@@ -1,8 +1,11 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Sparkles, Zap, BookOpen, Search } from 'lucide-react';
+
 const HeroSection = () => {
-  return <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#F6F8FA] to-white overflow-hidden">
+  return (
+    <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#F6F8FA] to-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <div className="lg:w-1/2 space-y-6 relative">
@@ -17,7 +20,10 @@ const HeroSection = () => {
               Rent individual articles from premium publishers without subscriptions. Pay for exactly what you read.
             </p>
             <div className="pt-6 flex flex-col sm:flex-row gap-4">
-              <Button className="bg-[#7855C0] hover:bg-[#6745B0] text-white px-6 py-6 text-lg rounded-xl shadow-md hover:shadow-lg transition-all">
+              <Button 
+                className="bg-[#7855C0] hover:bg-[#6745B0] text-white px-6 py-6 text-lg rounded-xl shadow-md hover:shadow-lg transition-all"
+                onClick={() => window.location.href = 'https://sightbar.glide.page'}
+              >
                 Start reading <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button variant="outline" className="px-6 py-6 text-lg rounded-xl border-2 border-gray-200">
@@ -86,6 +92,8 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default HeroSection;

@@ -41,7 +41,10 @@ const HowItWorks = () => {
         </div>
         
         <div className="text-center mt-12">
-          <Button className="bg-[#7855C0] hover:bg-[#6745B0] px-6 py-6 text-lg rounded-xl shadow-md hover:shadow-lg transition-all">
+          <Button 
+            className="bg-[#7855C0] hover:bg-[#6745B0] px-6 py-6 text-lg rounded-xl shadow-md hover:shadow-lg transition-all"
+            onClick={() => window.location.href = 'https://sightbar.glide.page'}
+          >
             Start reading now <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>
