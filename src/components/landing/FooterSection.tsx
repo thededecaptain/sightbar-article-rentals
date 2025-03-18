@@ -80,7 +80,7 @@ const FooterSection = () => {
           <p className="text-gray-400">&copy; {new Date().getFullYear()} Sightbar. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <FooterSmallLink href="/privacy">Privacy</FooterSmallLink>
-            <FooterSmallLink href="#">Terms</FooterSmallLink>
+            <FooterSmallLink href="/terms">Terms</FooterSmallLink>
             <FooterSmallLink href="#">Cookies</FooterSmallLink>
           </div>
         </div>
