@@ -1,11 +1,8 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Sparkles, Zap, BookOpen, Search } from 'lucide-react';
-
 const HeroSection = () => {
-  return (
-    <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#F6F8FA] to-white overflow-hidden">
+  return <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#F6F8FA] to-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <div className="lg:w-1/2 space-y-6 relative">
@@ -54,7 +51,7 @@ const HeroSection = () => {
                     <div className="h-2 w-2/3 bg-gray-200 rounded-full"></div>
                     <div className="h-2 w-1/2 bg-gray-200 rounded-full mt-1"></div>
                     <div className="mt-3 flex justify-end">
-                      <span className="text-xs bg-[#F4EBFF] text-[#7E5BC2] px-2 py-1 rounded-md">Rent for $0.99</span>
+                      <span className="text-xs bg-[#F4EBFF] text-[#7E5BC2] px-2 py-1 rounded-md">Rent for $0.09</span>
                     </div>
                   </div>
                   <div className="bg-gray-50 p-4 rounded-lg">
@@ -89,8 +86,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
