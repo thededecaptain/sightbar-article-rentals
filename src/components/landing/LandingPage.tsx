@@ -6,7 +6,6 @@ import ValueProposition from './ValueProposition';
 import HowItWorks from './HowItWorks';
 import ForPublishers from './ForPublishers';
 import LibraryAndCredits from './LibraryAndCredits';
-import Testimonials from './Testimonials';
 import FAQSection from './FAQSection';
 import FooterSection from './FooterSection';
 
@@ -20,7 +19,6 @@ const LandingPage = () => {
         <HowItWorks />
         <ForPublishers />
         <LibraryAndCredits />
-        <Testimonials />
         <FAQSection />
       </main>
       <FooterSection />
