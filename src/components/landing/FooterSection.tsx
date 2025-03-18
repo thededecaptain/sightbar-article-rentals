@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { toast } from '@/components/ui/use-toast';
@@ -48,8 +47,6 @@ const FooterSection = () => {
               <FooterLink href="#how-it-works">How it works</FooterLink>
               <FooterLink href="#for-publishers">For publishers</FooterLink>
               <FooterLink href="#faq">FAQ</FooterLink>
-              <FooterLink href="#">Pricing</FooterLink>
-              <FooterLink href="#">Features</FooterLink>
             </ul>
           </div>
           
