@@ -33,8 +33,8 @@ const Header = () => {
             <NavLink href="#faq">FAQ</NavLink>
           </nav>
           
-          <Button className="bg-[#7855C0] hover:bg-[#6745B0] text-white rounded-xl" onClick={() => window.location.href = 'https://sightbar.glide.page'}>
-            Sign in
+          <Button className="bg-[#7855C0] hover:bg-[#6745B0] text-white rounded-xl" asChild>
+            <Link to="/coming-soon">Sign in</Link>
           </Button>
           
           <button className="md:hidden p-2 rounded-full hover:bg-gray-100">

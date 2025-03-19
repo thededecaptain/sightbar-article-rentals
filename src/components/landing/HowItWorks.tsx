@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Globe, Clock, BookOpen } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const HowItWorks = () => {
   return (
@@ -43,9 +44,11 @@ const HowItWorks = () => {
         <div className="text-center mt-12">
           <Button 
             className="bg-[#7855C0] hover:bg-[#6745B0] px-6 py-6 text-lg rounded-xl shadow-md hover:shadow-lg transition-all"
-            onClick={() => window.location.href = 'https://sightbar.glide.page'}
+            asChild
           >
-            Start reading now <ArrowRight className="ml-2 h-5 w-5" />
+            <Link to="/coming-soon">
+              Start reading now <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
           </Button>
         </div>
       </div>
