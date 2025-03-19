@@ -1,30 +1,21 @@
 
-import React, { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { ArrowRight, Mail } from 'lucide-react';
-import { toast } from '@/components/ui/use-toast';
+import React, { useEffect } from 'react';
 import Header from '@/components/landing/Header';
 import FooterSection from '@/components/landing/FooterSection';
 
 const ComingSoonPage = () => {
-  const [email, setEmail] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  // Load Typeform script when component mounts
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = '//embed.typeform.com/next/embed.js';
+    script.async = true;
+    document.body.appendChild(script);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate submission - in a real app, this would connect to a backend
-    setTimeout(() => {
-      toast({
-        title: "Thank you for subscribing!",
-        description: "We'll notify you when Sightbar launches.",
-      });
-      setEmail('');
-      setIsSubmitting(false);
-    }, 1000);
-  };
+    // Clean up the script when component unmounts
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -46,40 +37,16 @@ const ComingSoonPage = () => {
             </p>
             
             <div className="glass-panel bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-purple-100 shadow-lg max-w-xl mx-auto">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="space-y-2">
-                  <label htmlFor="email" className="block text-left text-gray-700 font-medium">
-                    Email address
-                  </label>
-                  <Input
-                    id="email"
-                    type="email"
-                    placeholder="you@example.com"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="w-full px-4 py-3 h-12 text-base"
-                    required
-                  />
-                </div>
-                <Button 
-                  type="submit" 
-                  className="w-full bg-[#7855C0] hover:bg-[#6745B0] text-white py-6 rounded-xl text-lg"
-                  disabled={isSubmitting}
-                >
-                  {isSubmitting ? (
-                    <span>Processing...</span>
-                  ) : (
-                    <>
-                      Notify me <ArrowRight className="ml-2 h-5 w-5" />
-                    </>
-                  )}
-                </Button>
-              </form>
+              {/* Typeform Embed */}
+              <div data-tf-live="01JPR7APE9F2J4N57DGA1A5KX3"></div>
             </div>
             
             <div className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-6">
               <div className="flex items-center gap-2 text-gray-600">
-                <Mail className="h-5 w-5 text-[#7855C0]" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7855C0" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-mail">
+                  <rect width="20" height="16" x="2" y="4" rx="2"/>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                </svg>
                 <span>info@sightbar.io</span>
               </div>
             </div>
