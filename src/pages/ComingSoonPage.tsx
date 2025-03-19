@@ -74,9 +74,6 @@ const ComingSoonPage = () => {
                     </>
                   )}
                 </Button>
-                <p className="text-sm text-gray-500 mt-4">
-                  We'll never share your email with anyone else.
-                </p>
               </form>
             </div>
             
