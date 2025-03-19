@@ -1,7 +1,7 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Sparkles, Zap, BookOpen, Search } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
@@ -22,12 +22,20 @@ const HeroSection = () => {
             <div className="pt-6 flex flex-col sm:flex-row gap-4">
               <Button 
                 className="bg-[#7855C0] hover:bg-[#6745B0] text-white px-6 py-6 text-lg rounded-xl shadow-md hover:shadow-lg transition-all"
-                onClick={() => window.location.href = 'https://sightbar.glide.page'}
+                asChild
               >
-                Start reading <ArrowRight className="ml-2 h-5 w-5" />
+                <Link to="/coming-soon">
+                  Start reading <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
               </Button>
-              <Button variant="outline" className="px-6 py-6 text-lg rounded-xl border-2 border-gray-200">
-                For publishers
+              <Button 
+                variant="outline" 
+                className="px-6 py-6 text-lg rounded-xl border-2 border-gray-200"
+                asChild
+              >
+                <Link to="/coming-soon">
+                  For publishers
+                </Link>
               </Button>
             </div>
           </div>
