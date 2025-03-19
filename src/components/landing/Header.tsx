@@ -2,16 +2,17 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Search, Menu } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <header className="py-5 px-4 sm:px-6 lg:px-8 bg-white border-b border-gray-100 sticky top-0 z-50 backdrop-blur-md bg-white/90">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <div className="text-2xl font-bold flex items-center">
+        <Link to="/" className="text-2xl font-bold flex items-center">
           <span>Sight</span>
           <span className="text-[#7855C0]">bar</span>
           <div className="ml-1 w-2 h-2 rounded-full bg-[#7855C0]"></div>
-        </div>
+        </Link>
         
         <div className="hidden md:flex items-center space-x-1 bg-gray-100 rounded-full pl-4 pr-1 py-1">
           <Search className="w-4 h-4 text-gray-500" />
