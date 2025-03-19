@@ -4,6 +4,13 @@ import { ArrowRight, Sparkles, Zap, BookOpen, Search } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
+  const scrollToPublishers = () => {
+    const publishersSection = document.getElementById('for-publishers');
+    if (publishersSection) {
+      publishersSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#F6F8FA] to-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
@@ -31,11 +38,9 @@ const HeroSection = () => {
               <Button 
                 variant="outline" 
                 className="px-6 py-6 text-lg rounded-xl border-2 border-gray-200"
-                asChild
+                onClick={scrollToPublishers}
               >
-                <Link to="/coming-soon">
-                  For publishers
-                </Link>
+                For publishers
               </Button>
             </div>
           </div>
