@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Search, Menu } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -13,18 +13,6 @@ const Header = () => {
           <span className="text-[#7855C0]">bar</span>
           <div className="ml-1 w-2 h-2 rounded-full bg-[#7855C0]"></div>
         </Link>
-        
-        <div className="hidden md:flex items-center space-x-1 bg-gray-100 rounded-full pl-4 pr-1 py-1">
-          <Search className="w-4 h-4 text-gray-500" />
-          <input 
-            type="text" 
-            placeholder="Paste article URL..." 
-            className="bg-transparent border-none outline-none text-sm w-56 text-gray-700 placeholder-gray-500"
-          />
-          <Button className="rounded-full h-8 w-8 p-0 bg-[#7855C0]">
-            <Search className="h-4 w-4" />
-          </Button>
-        </div>
         
         <div className="flex items-center space-x-4">
           <nav className="hidden md:flex space-x-8">
